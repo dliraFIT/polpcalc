@@ -11,7 +11,10 @@
 
 
 /* auto-loaded libraries */
-$config['libraries'] = array();
+$config['libraries'] = array(
+		array('jwt','jwt'),
+		array('params','params')
+);
 
 /* auto-loaded scripts */
 $config['scripts'] = array("base");

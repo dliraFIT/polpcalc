@@ -13,13 +13,13 @@
             </a>
             &nbsp;
             <div class="brand inline">
-              <img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="93" height="25">
+              <img src="/calculadora/assets/img/logo.png" alt="logo" data-src="/calculadora/assets/img/logo.png" data-src-retina="/calculadora/assets/img/logo_2x.png" width="93" height="25">
             </div>
-             <?=invoke("default","notifications");?>
+             <?=invoke("template","notifications");?>
           </div>
         </div>
         <div class=" pull-right">
-             <?=invoke("default","userInfo");?>
+             <?=invoke("template","userInfo");?>
         </div>
       </div>
       <!-- END HEADER -->

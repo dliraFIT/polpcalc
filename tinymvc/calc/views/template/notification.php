@@ -14,11 +14,11 @@
                           <div class="heading">
                             <a href="#" class="text-danger">
                               <i class="fa fa-exclamation-triangle m-r-10"></i>
-                              <span class="bold">98% Server Load</span>
-                              <span class="fs-12 m-l-10">Take Action</span>
+                              <span class="bold">Testing</span>
+                              <span class="fs-12 m-l-10">Click aqui</span>
                             </a>
                             <span class="pull-right time">
-                                                        2 mins ago
+                                                        hace 1 minuto
                                                     </span>
                           </div>
                           <div class="option">
@@ -30,7 +30,7 @@
                       <!-- END Notification Body-->
                       <!-- START Notification Footer-->
                       <div class="notification-footer text-center">
-                        <a href="#" class="">Read all notifications</a>
+                        <a href="#" class="">Ver todas las notificaciones</a>
                         <a data-toggle="refresh" class="portlet-refresh text-black pull-right" href="#">
                           <i class="pg-refresh_new"></i>
                         </a>
