@@ -59,6 +59,12 @@
           <img src="/calculadora/assets/img/logo.png" alt="logo" data-src="/calculadora/assets/img/logo.png" data-src-retina="assets/img/logo_2x.png">
           <p class="p-t-35">Ingresa con tu cuenta personal.</p>
           <!-- START Login Form -->
+          
+          <?php 
+          if(isset($err)){
+          	echo $err;
+          }?>
+          
           <form id="form-login" class="p-t-15" role="form" action="/calculadora/default/authenticate/">
             <!-- START Form Control-->
             <div class="form-group form-group-default">
