@@ -21,14 +21,19 @@ class Default_Controller extends TinyMVC_Controller
   }
   function authenticate()
   {
+  	$this->load->model('Profile_Model','user');
+  	$hash = hash('sha256', $this->params["password"]);
+  	$user = $this->user->get_user($this->params["username"],$hash);
+  	print_r($user);
+  	//$this->app->authenticate($this);
   	//TODO Logica de authenticacion
-  	/* cuando este ok */
-  	if(estoylogeado){
+  	/* cuando este ok 
+  	if($this->app->authenticate($this)){
   		header('Location: /calculadora/template/index?go=home.index');
   	} else {
   		header('Location: http://localhost/calculadora/?err=Hay un problema con tus credeciales');
   	}
-  	
+  	*/
   	
   }
 }

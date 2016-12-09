@@ -13,7 +13,8 @@
 /* auto-loaded libraries */
 $config['libraries'] = array(
 		array('jwt','jwt'),
-		array('params','params')
+		array('params','params'),
+		array('app','app')
 );
 
 /* auto-loaded scripts */

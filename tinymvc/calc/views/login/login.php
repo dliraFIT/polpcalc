@@ -64,7 +64,6 @@
           if(isset($err)){
           	echo $err;
           }?>
-          
           <form id="form-login" class="p-t-15" role="form" action="/calculadora/default/authenticate/">
             <!-- START Form Control-->
             <div class="form-group form-group-default">
