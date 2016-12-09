@@ -53,6 +53,9 @@ class Template_Controller extends TinyMVC_Controller
   {
   	$this->view->display('template/footer_includes');
   }
+  function logout(){
+  	$this->app->deauthenticate($this);
+  }
 }
 
 ?>

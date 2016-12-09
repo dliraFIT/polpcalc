@@ -2,6 +2,22 @@
 class Base_Model extends TinyMVC_Model
 {
 	public function execSql($query,$Args,$returnFlag = false,$debug = false){
+		$this->db->query($query,$Args);
+		$results = array();
+		if ($returnFlag) {
+			$item = new stdClass;
+			while($row = $this->db->next()){
+				foreach ($row as $key=> $value)
+					$item->$key = $value;
+				$results[] = $item;
+			}
+			return $results;
+		}
+		
+		
+		
+		
+		/*
 		try {
 			$this->db->query($query,$Args);
 			if ($returnFlag) {
@@ -25,7 +41,7 @@ class Base_Model extends TinyMVC_Model
 				$results = false;
 			}
 		}
-		return $results;
+		return $results;*/
 	}
 }
 ?>	

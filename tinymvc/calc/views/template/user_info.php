@@ -13,7 +13,7 @@
 	            </button>
 	            <ul class="dropdown-menu profile-dropdown" role="menu">
 	            	<li><a href="#"><i class="fa-"></i>Datos de perfil</a></li>
-	            	<li class="bg-master-lighter"><a id="user-info-logout" href="#" class="clearfix"><span class="pull-left">Logout</span><span class="pull-right"><i class="pg-power"></i></span></a></li>
+	            	<li class="bg-master-lighter"><a id="user-info-logout" href="/calculadora/template/logout" class="clearfix"><span class="pull-left">Logout</span><span class="pull-right"><i class="pg-power"></i></span></a></li>
 	            </ul>
           </div>
           </div>
