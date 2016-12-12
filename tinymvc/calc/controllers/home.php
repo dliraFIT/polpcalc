@@ -13,7 +13,7 @@ class Home_Controller extends TinyMVC_Controller
 {
   function index()
   {
-  	$this->view->display('home/test');
+  	$this->view->display('home/index');
   }
 }
 

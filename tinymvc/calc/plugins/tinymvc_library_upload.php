@@ -5,22 +5,23 @@ class TinyMVC_Library_Upload
 	private $Maxsize;
 	private $UploadPath;
 	function __construct() {
-		$db = new TinyMVC_Library_Pagesdb();
-		$this->Maxsize = 100000;
-		$this->UploadPath = "c:/uploads";
+		//$db = new TinyMVC_Library_Pagesdb();
+		$this->Maxsize = 102400;   //100MB
+		$this->UploadPath = "c:/xampp/tinymvc/calc/uploads";
 	}
+	
 	function saveAsTemp($ctrlname)
 	{
 		$now = DateTime::createFromFormat('U.u', microtime(true));
 		$array = explode(".",$_FILES[$ctrlname]['name']);
 		$ext = end($array);
 		$filename = md5($now->format("m-d-Y H:i:s.u")).".".$ext;
-		if (move_uploaded_file($_FILES[$ctrlname]['tmp_name'], $this->UploadPath.$filename)) {
+		if (move_uploaded_file($_FILES[$ctrlname]['tmp_name'], $this->UploadPath.$filename))
 			return $filename;
-		} else {
+		else
 			return false;
-		}
 	}
+	
 	function getUploadAvatar($ctrlname)
 	{
 	  	$allowedTypes = array(IMAGETYPE_PNG, IMAGETYPE_JPEG, IMAGETYPE_GIF);
@@ -42,12 +43,11 @@ class TinyMVC_Library_Upload
 		  		}
 		  		$avatar = "data:image/".$ext.";base64,".$data;
 		  		return $avatar;
-			  } else {
-			  	return false;
-			  }
-	  	} else {
+			} else 
+			 	return false;
+			  
+	  	} else
 	  		return false;
-	  	}
 	}
 }
   
